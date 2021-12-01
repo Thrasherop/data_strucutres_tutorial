@@ -1,10 +1,15 @@
-def count_up_twice(n):
+def reverse_string(string):
+    all_letters_stack = []
 
-    for x in range(0, n):
+    for character in string:
+        all_letters_stack.append(character)
 
-        for i in range(0, n):
+    
+    reversed_string = ""
 
-            print(x, i)
+    while len(all_letters_stack) > 0:
+        reversed_string += all_letters_stack.pop()
 
+    return reversed_string
 
-count_up_twice(2)
+print(reverse_string("foo"))

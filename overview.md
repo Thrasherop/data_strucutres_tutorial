@@ -146,7 +146,8 @@ A stack is a data structure that is a list of items. The items are added to the 
 
 * ## Uses
 
-    - What is a stack excel at
+    - What does a stack excel at
+
     - Where are stacks used
 
 - ## Example python problem
@@ -161,6 +162,9 @@ A stack is a data structure that is a list of items. The items are added to the 
 
 # Binary Tree
 
-## Recursion
-## What is a Binary Search Tree
-## Performance
+- Recursion
+- What is a Binary Search Tree
+- Performance
+
+
+
