@@ -137,5 +137,30 @@ Viewing this performance as data increases is the point of Big O notation.
 
 A stack is a data structure that is a list of items. The items are added to the stack in the order they are added, and the last item added is the first item to be removed. We call this a LIFO (last in, first out) data structure.
 
-### Why is this 
+- ## How to use a stack
 
+ - ## Performance of a stack
+
+    -  Dynamic arrays
+    -  Big O notation of the stack
+
+* ## Uses
+
+    - What is a stack excel at
+    - Where are stacks used
+
+- ## Example python problem
+
+- ## Practice problem
+
+
+# Sets
+
+
+
+
+# Binary Tree
+
+## Recursion
+## What is a Binary Search Tree
+## Performance
