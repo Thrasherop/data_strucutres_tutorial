@@ -157,6 +157,17 @@ A stack is a data structure that is a list of items. The items are added to the 
 
 # Sets
 
+## What is a hash
+
+## What is a set
+
+## Performance of a set
+
+## Where sets are used
+
+## Set example problem
+
+## Set practice problem
 
 
 

@@ -4,7 +4,6 @@
 
 
 def verify_braces(string):
-    
     # Your code here
     pass
 
