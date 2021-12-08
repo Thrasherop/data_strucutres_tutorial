@@ -161,9 +161,11 @@ A stack is a data structure that is a list of items. The items are added to the 
 
 ## What is a set
 
+## Conflict resolution
+
 ## Performance of a set
 
-## Where sets are used
+## Sets in Python3
 
 ## Set example problem
 
