@@ -106,12 +106,14 @@ def reverse_string(string):
 
 Now it's time for you to do it yourself with this practice problem. The problem you need to solve is this: make a function that can verify every quote had an close quote. Make sure to use a stack
 
-I have already created `stack_problem.py` for you in `./practice_problems/problems/`. This file has an empty function, as well as already written tests. Please note these tests are not exhaustive, and you may need to write additional tests.
+I have already created `stack_problem.py` for you  [here](./practice_problems/problems/stack_problem.py). This file has an empty function, as well as already written tests. Please note these tests are not exhaustive, and you may need to write additional tests.
 
-There is also a example solution at `./practice_problems/solutions/stack_example_soludtion.py`. There are many different ways to solve a Software Engineering problem, and this is the way I personally chose to. This means your code may look different, but still work. Nonetheless, feel free to use my solution for additional insight or if you get stuck and need some help
+There is also a example solution [here](`./practice_problems/solutions/stack_example_soludtion.py`). There are many different ways to solve a Software Engineering problem, and this is the way I personally chose to. This means your code may look different, but still work. Nonetheless, feel free to use my solution for additional insight or if you get stuck and need some help
 
 ## Conclusion
 
 Like all data structures, the stack isn't the right tool most of the time. However, when it is the right tool, it
 is incredibly elegant and incredibly efficient. Thus, it is an incredibly powerful tool to keep in your tool belt.
 
+
+Here is a link to the next lesson about [sets](./sets.md)

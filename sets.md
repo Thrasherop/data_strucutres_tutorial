@@ -40,7 +40,7 @@ We have yet another problem: what do we do when two pieces of data, when passed 
 For example, let's say we need to put float `6.874` and string `hello world` into a set named `berries`. Let's assume that, when passed through our function and equation, they both yield the index `4`. We can create another set (or any data structure) named `cream`, and put the address of `cream` into index 4 in `berries`. Finally, we put `6.874` and `hello world` inside of `cream`. Thus, we can essentially store multiple values into the same index in `berries`.
 
 
-## Performance
+## Performance of a set
 
 All of this fancy hashing allows us to run a quick hash() call, and then know exactly where to look for data in a set. This means we have O(1) performance. No matter how many millions of pieces of data are in a set, the amount of time it takes to check for 1 piece of data stays the same.
 
@@ -90,6 +90,7 @@ This code will print the following:
 Notice that how, even though we added `1` twice, it was only put into the set once, and that it didn't throw any errors. In other words, the second `my_set.add(1)` failed silently. Again, this may seem like a bug, but it is an intended feature, as we will see below.
 
 ## Example question
+
 Here is the problem: Given a list of numbers, which numbers in this list add up to 8. There should be no duplicates. With a set, you can do this in O(n).
 
 For this problem, I plan to solve it by initializing a set, and putting all the numbers into it. Next, I'll loop through the set. For every number, I'll subtract it from 8. This subtraction will give me a target number, or the number I need in order to complete the pair (remember a pair needs to add up to 8). Finally, I check if the target number is in the set (remember, this is an O(1) operation). If it is, that means we have successfully found a pair, and so I print the targetNum and the num out to console.
@@ -116,4 +117,8 @@ Notice how the if statement has that second clause of `and targetNum > num`. Thi
 Here is the task:  Find if a Python list has any duplicates. This should be done in O(n) using a set. 
 
 Like with the stack lesson, there is a premade file [here](./practice_problems/problems/set_problem.py). Additionally, there is a sample solution [here](./practice_problems/solutions/set_example_solution.py) if you get stuck or you want to see how I did it. 
+
+## Conclusion
+
+The set is a really clever data structure that can come in handy when creating an algorithm. Similar to the stack, and similar to all data structures, it isn't right for all tasks. When you use it properly, however, it can improve the performance of your program exponentially.
 

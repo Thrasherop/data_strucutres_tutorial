@@ -112,7 +112,7 @@ Notice how many more outputs the parameter of 4 has. Even though 4 is only twice
 
 Lets take a look at the following graphs courtesy of desmos:
 
-![desmos](desmos_graph.PNG)
+![desmos](./images/desmos_graph.PNG)
 
 The purple line is the `some_function()` function. The `count_up_to(n)` is the red line. The `count_up_to_2(n)` is the blue line. Lastly, `count_up_twice(n)` is that green line. It has that time cost of `2n^2`. 
 
@@ -122,7 +122,7 @@ It gets more interesting when we look at the other functions, however. The `coun
 
 Lastly, lets take a look at `count_up_twice(n)`. Because of this nested for loop, the time it takes to run is exponential. This is O(n^2). Notice how that green line takes off. If we zoom out of the graph, we see something quite scary.
 
-![desmos2](desmos_zoomed_out.png)
+![desmos2](./images/desmos_zoomed_out.png)
 
 
 Notice how the green line is almost vertical. Big O notation is only used when you're dealing with big data. Think data sets hundreds of thousands, or even millions long. At just 10,000, O(n^2) appears to be vertical. This is considered very poor performance, and should be avoided if at all possible. 
@@ -131,45 +131,40 @@ Viewing this performance as data increases is the point of Big O notation.
 
 
 
-# Stacks
+# [Stacks](./stacks.md)
 
-## What is a stack?
+- What is a stack?
 
-A stack is a data structure that is a list of items. The items are added to the stack in the order they are added, and the last item added is the first item to be removed. We call this a LIFO (last in, first out) data structure.
+- How to use a stack
 
-- ## How to use a stack
+- Performance of a stack
 
- - ## Performance of a stack
+- Uses
 
-    -  Dynamic arrays
-    -  Big O notation of the stack
+-  Example python problem
 
-* ## Uses
-
-    - What does a stack excel at
-
-    - Where are stacks used
-
-- ## Example python problem
-
-- ## Practice problem
+- Practice problem
 
 
-# Sets
+# [Sets](./sets.md)
 
-## What is a hash
+- What is a set
 
-## What is a set
+- What is a hash
 
-## Conflict resolution
+- Conflict handling
 
-## Performance of a set
+- Performance of a set
 
-## Sets in Python3
+- Uniqueness
 
-## Set example problem
+- Sets in Python3
 
-## Set practice problem
+- Example problem
+
+- Practice problem
+
+- Conclusion
 
 
 
@@ -178,6 +173,10 @@ A stack is a data structure that is a list of items. The items are added to the 
 - Recursion
 - What is a Binary Search Tree
 - Performance
+- Balancing
+- Example problem
+- Practice problem 
+- Conclusion
 
 
 
