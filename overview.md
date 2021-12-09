@@ -168,7 +168,7 @@ Viewing this performance as data increases is the point of Big O notation.
 
 
 
-# Binary Tree
+# [Binary Tree](./binary_search_trees.md)
 
 - Recursion
 - What is a Binary Search Tree

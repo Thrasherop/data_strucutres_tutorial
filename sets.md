@@ -122,3 +122,5 @@ Like with the stack lesson, there is a premade file [here](./practice_problems/p
 
 The set is a really clever data structure that can come in handy when creating an algorithm. Similar to the stack, and similar to all data structures, it isn't right for all tasks. When you use it properly, however, it can improve the performance of your program exponentially.
 
+
+You can find the next lesson about Binary Search Trees [here](./binary_search_trees.md)
