@@ -183,13 +183,88 @@ We now have two sections, one for each direction. Inside, we need to check if th
 
 ```
 
-Finally, we need a way to print the BST. When we call `print()` on an object, it tries to call the `__str__` method. If we implement this method, then we can control what `print()` says. Let's start by creating the method:
+Finally, we need a way to print the BST. When we call `print()` on an object, it tries to call the `__str__` method. If we implement this method, then we can control what `print()` says. We will need to recurse down the tree in order to print all the items, so we will also create a `_str_helper` method. Let's start by creating the methods:
 
 ```python
 
     def __str__(self):
         pass
 
+    def _str_helper(self, cur_node):
+        pass
+
+```
+
+Notice that the `_str_helper` method takes in the `cur_node` parameter. This is to help it keep track of where it is recursing. First let' sdesign the `__str__` method. All this method needs to do is check if self.root is None. If it is we will return a string saying so. Otherwise, we will call `_str_helper` on self.root and return the result. This will end up looking like this:
+
+```python
+    def __str__(self):
+
+        # Checks if the tree is none
+        if self.root is None:
+            return "Tree is empty!"
+
+        # Else call helper method
+        else:
+            return self._str_helper(self.root)
+
+    def _str_helper(self, cur_node):
+
+        pass
+
+
 ```
 
 
+Now we need to build the `_str_helper` method. First, we need to check if the cur_node is None. If it is, that means we've reached the end of this branch, and thus we will just return an empty string. If it is not None, then we will recurse in both directions. This will look like this:
+
+```python
+
+    def _str_helper(self, cur_node):
+
+        if cur_node is None:
+            return ""
+
+        else:
+
+            # Recurses with left, self, then right
+            left_branch_str = self._str_helper(cur_node.left)
+            this_node_val = str(cur_node.value)
+            right_branch_str = self._str_helper(cur_node.right)
+
+            full_str = left_branch_str + " " + this_node_val + " " + right_branch_str
+
+            return full_str
+
+
+```
+
+The recursion return line is a little confusing, so let me explain it. We want it to print the numbers in order. Thus we need to print everything to the left, the current node, and then the right. Thus, we recurse left, and assign that string to a variable. Then we get the string of the current node's value. Then we get the right branch and assign that string to a third variable. Finally, we concactinate all of those variables together, with spaces and assign that to `full_str`. We can then return `full_str`. This will successfully recurse, and return the full string.
+
+We can then test this code using the following:
+
+```python
+
+# Test
+bst = BST()
+
+# Add things
+bst.add_value(5)
+bst.add_value(3)
+bst.add_value(7)
+bst.add_value(2)
+bst.add_value(4)
+bst.add_value(5)
+
+# Print
+print(bst)
+
+```
+
+I have compiled all of this into a single file. You can find that file [here](./examples/bst_example_full_solution.py)
+
+
+## Practice Problem
+
+
+## Conclusion
