@@ -2,21 +2,21 @@
 
 ## Introduction
 
-This course is intended to teach you the basics of three data structures: stacks, sets, and binary trees.This course will teach you the pro's and con's of each data structure, as well as teach you how to implement each data structure in Python3.
+This course is intended to teach you the basics of three data structures: stacks, sets, and binary search trees. This course will teach you the pro's and con's of each data structure, as well as teach you how to implement each data structure in Python3.
 
 
 # First, some basics
 
 ## What is "performance"
 
-Performance is how many resources are needed to run a program. There are two types of performance:
+Performance is how much of the system resources are needed to run a program. There are two types of performance:
 
 * Memory usage
 * CPU time
 
 Memory usage is how much computer memory is consumed while running the program, and will not be considered in this course. 
 
-CPU time is how long it takes the CPU to actually run the program, and will be the performance we focus on in this course. 
+CPU time is how long it takes the CPU to actually run the program, and will be the performance we focus on here. 
 
 ## Big O notation
 
@@ -49,7 +49,7 @@ def count_up_to(n):
 ```
 
 
-So how many lines of code will run for this program? The answer is we don't know. It changes based on what is inputted for the parameter `n`. For every `n`, two lines of code are runned (the for loop statement and the print statement). So we can describe the performance for this function as `2n`. 
+So how many lines of code will run for this program? The answer is we don't know. It changes based on what is inputted for the parameter `n`. For every `n`, two lines of code are run (the for loop statement and the print statement). So we can describe the performance for this function as `2n`. 
 
 
 Take a look at this similar function:
@@ -118,11 +118,11 @@ The purple line is the `some_function()` function. The `count_up_to(n)` is the r
 
 In big O notation, we really only care about how it changes as more data is inputted. In other words, we care about the shape of those lines. We define big O notation like this: O([performance]). So `some_function()` has a performance of O(1), meaning it doesn't change based on the input. 
 
-It gets more interesting when we look at the other functions, however. The `count_up_to(n)` has a performance of O(n). The `count_up_to_2(n)` also has a performance of O(n). Although it does take a bit longer, the shape of the line is the same, so the big O notation is the same.
+It gets more interesting when we look at the other functions, however. The `count_up_to(n)` has a performance of O(n). The `count_up_to_2(n)` also has a performance of O(n). Although it does take a bit longer, the shape of the line is the same as `count_up_to(n)`, so the big O notation is the same.
 
 Lastly, lets take a look at `count_up_twice(n)`. Because of this nested for loop, the time it takes to run is exponential. This is O(n^2). Notice how that green line takes off. If we zoom out of the graph, we see something quite scary.
 
-![desmos2](./images/desmos_zoomed_out.png)
+![desmos2](./images/desmos_zoomed_out.PNG)
 
 
 Notice how the green line is almost vertical. Big O notation is only used when you're dealing with big data. Think data sets hundreds of thousands, or even millions long. At just 10,000, O(n^2) appears to be vertical. This is considered very poor performance, and should be avoided if at all possible. 
