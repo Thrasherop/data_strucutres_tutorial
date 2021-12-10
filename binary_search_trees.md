@@ -266,5 +266,9 @@ I have compiled all of this into a single file. You can find that file [here](./
 
 ## Practice Problem
 
+Here is your practice problem for this lesson: take the BST class we just created, and implement `.to_list()` and `.find_item()` methods. The `.to_list()` should return a list of all the items in the BST in acending order. The `.find_item()` should return the Node object that has that value. I have created a file with the current BST class as well as empty `.find_item()` and `.to_list` methods [here](./practice_problems/problems/bst_problem.py). You are welcome to check that file if you get stuck. It might also be helpful to reference the `__str__` method. 
+
 
 ## Conclusion
+
+Binary search trees are incredible for storing data that you will need to search through. All though we simply used integers to store, we could put anything in a BST. For example, we could store user data by hashing usernames and using those hashes as the key in the BST. Using recursion, you can search through a tree for a user in O(log n) speed, which is incredibly fast, thus making Binary Search Tree's an incredibly powerful tool in your tool belt. 
