@@ -2,7 +2,7 @@
 
 ## What is recursion
 
-A binary search tree is an incredibly genius data structure. Before I explain a binary search tree, however, you need to understand recursion, as recursion is how a binary search tree works. Simply put, recursion is when a function calls itself. Unfortunately, recursion is a long and difficult topic, and it is very hard to understand over text. Luckily, `Web Dev Simplified` has a great and quick tutorial to teach recursion. You can find it [here](https://youtu.be/6oDQaB2one8).
+A binary search tree is an incredibly genius data structure. Before I explain binary search trees, however, you need to understand recursion, as recursion is essential how a binary search tree works. Simply put, recursion is when a function calls itself. Unfortunately, recursion is a long and difficult topic, and it is very hard to understand over text. Luckily, `Web Dev Simplified` has a great and quick tutorial to teach recursion. You can find it [here](https://youtu.be/6oDQaB2one8).
 
 
 
@@ -22,13 +22,13 @@ Following this system, we can add the following numbers: 2, 3, 7, 9. After we ad
 
 ![foo](./images/BST3.png)
 
-Notice how the new 2 went to the right. This is because, as mentioned above, we put smaller numbers to the left, and everything else (including equal numbers) to the right. Thus, all these numbers fall into their place.
+Notice how the new 2 went to the right. This is because, as mentioned above, we put smaller numbers to the left, and everything else (including equal numbers) to the right. Thus, all these numbers fall into their place. That being said, you are allowed to choose which way a number goes if it is equal to the existing node. This is just how I chose to do it.
 
 ## Performance
 
 In the overview page we talked about big O notation. I showed the graphs for the following performances: `O(1)`, `O(n)`, and `O(n^2)`. There is one more common type of performance: `O(log n)`. When compared with the other lines, it looks like this: 
 
-![foo](./images/desmos3.png)
+![foo](./images/desmos3.PNG)
 
 In this image, the purple line is `O(log n)`. Notice how it is almost as fast as `O(1)`. `O(log n)` is considered super fast performance, and it is nearly the holy grail of speed. 
 

@@ -129,7 +129,8 @@ Notice how the green line is almost vertical. Big O notation is only used when y
 
 Viewing this performance as data increases is the point of Big O notation. 
 
-
+# Here is an overview of the course:
+Click on the heading to go to that lesson
 
 # [Stacks](./stacks.md)
 

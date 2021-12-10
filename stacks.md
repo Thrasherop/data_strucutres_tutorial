@@ -2,7 +2,7 @@
 
 ## What is a stack?
 
-A stack is a data structure that is a list of items. The items are added to the stack in the order they are added, and the last item added is the first item to be removed. We call this a LIFO (last in, first out) data structure.
+A stack is a data structure that holds individual items. The items are added to the stack in the order they are added, and the last item added is the first item to be removed. We call this a LIFO (last in, first out) data structure.
 
 
 ## Dynamic Arrays
@@ -30,7 +30,7 @@ Although a stack is incredibly fast, it may seem useless at first. Why would we 
 
 One common use for a stack is to keep track of history. Have you ever used ctrl + z to undo a change in a text editor? If yes (which it probably is) then you've interacted with a stack. In a text editor, every change is pushed into a stack. Then when you hit the undo button, it just pops the end off the stack and undoes that change. It is an O(1) operation. The stack is an incredible way of tracknig history.
 
-Have you ever had a function call itself? Letting it do that forever will result in an error called `stack overflow`. Your function callback is tracked in a stack, and when you recurse down a function too many times, that stick fills up and then overflows. That's right. Even your Python interpreter is using the stack data structure.
+Have you ever had a function call itself? Letting it do that forever will result in an error called `stack overflow`. Your function callback is tracked in a stack, and when you recurse down a function too many times, that stack fills up and then overflows. That's right. Even your Python interpreter is using the stack data structure.
 
 ## How to do it in Python3
 
@@ -104,9 +104,9 @@ def reverse_string(string):
 
 ## Practice problem
 
-Now it's time for you to do it yourself with this practice problem. The problem you need to solve is this: make a function that can verify every quote had an close quote. Make sure to use a stack
+Now it's time for you to do it yourself with this practice problem. The problem you need to solve is this: make a function that can verify every opening brace had an closing brace. Make sure to use a stack
 
-I have already created `stack_problem.py` for you  [here](./practice_problems/problems/stack_problem.py). This file has an empty function, as well as already written tests. Please note these tests are not exhaustive, and you may need to write additional tests.
+I have already created `stack_problem.py` for you  [here](./practice_problems/problems/stack_problem.py). This file has an empty function, as well as pre written tests. Please note these tests are not exhaustive, and you may need to write additional tests.
 
 There is also a example solution [here](`./practice_problems/solutions/stack_example_soludtion.py`). There are many different ways to solve a Software Engineering problem, and this is the way I personally chose to. This means your code may look different, but still work. Nonetheless, feel free to use my solution for additional insight or if you get stuck and need some help
 

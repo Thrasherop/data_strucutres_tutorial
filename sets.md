@@ -29,9 +29,9 @@ But if I run this program once again I get an output of:
 7685339043008787875
 ```
 
-It's also important that not all hashing algorithms work like this, but the `hash()` function does behave this way. 
+It's also important that not all hashing algorithms work like this, but the `hash()` function does behave this way. It is important to note that the `hash()` method is **NOT** cryptographically secure. If you want to store sensitive data (such as passwords) then use a cryptographically secure algorithm such as bcrypt or argon2.
 
-As you can see, we can use the string as a numerical index. We can then store the string at that index. That number, however, is really big. If we need to store just 100 items, it doesn't make sense to make an array of size  7.6 quintillion. To resolve this, we can pass this number through a simple equation to make the size smaller: `index = hash % array_size`. So if we have an array of size 10, we will run `7685339043008787875 % 10`. This gives us an output of 5, thus we can put this string into index 5.
+As you can see, we can now use the string as a numerical index. We can thus store the string at that index. That number, however, is really big. If we need to store just 100 items, it doesn't make sense to make an array of size  7.6 quintillion. To resolve this, we can pass this number through a simple equation to make the size smaller: `index = hash % array_size`. So if we have an array of size 10, we will run `7685339043008787875 % 10`. This gives us an output of 5, thus we can put this string into index 5.
 
 ## Conflict handling
 
@@ -87,7 +87,7 @@ This code will print the following:
 {1, 2, 3}
 {2, 3}
 ```
-Notice that how, even though we added `1` twice, it was only put into the set once, and that it didn't throw any errors. In other words, the second `my_set.add(1)` failed silently. Again, this may seem like a bug, but it is an intended feature, as we will see below.
+Notice that how, even though we added `1` twice, it was only put into the set once, and that it didn't throw any errors. In other words, the second `my_set.add(1)` failed silently. Again, this may seem like a bug, but it is an intended feature, as we will see in the practice problem.
 
 ## Example question
 
