@@ -46,13 +46,13 @@ Now, lets see an unbalanced search tree. Create a tree and start it with the num
 
 This is a very unbalanced search tree. Notice how it is a single branch that spans the whole system. Instead of `O(log n)` for searching, this tree has a performance of `O(n)`. This is a huge performance loss, and so you want to keep your tree balanced.
 
-I won't go into too much detail on balancing algorithms. That is beyond the scope of this class. However, if you are interested in learning more, look up the `Adelson, Velskii, Landis` algorithm. For now, we can try to make sure we aren't adding data that is constantly bigger or constantly smaller right after each other, but that the data has entropy. 
+I won't go into too much detail on balancing algorithms as that is beyond the scope of this tutorial. However, if you are interested in learning more, look up the `Adelson, Velskii, Landis` algorithm. For now, we can try to make sure we aren't adding data that is constantly bigger or constantly smaller right after each other, but that the data has entropy. 
 
 
 
 ## Example problem
 
-This task is similar: using Python3, create a BST class that holds simple integers. 
+This is the task we will use as our example: using Python3, create a BST class that holds simple integers. 
 
 First, we create the BST class, and we will also create a nested Node class:
 
@@ -98,7 +98,7 @@ class BST:
 
 Next, we will create the BST constructor. This will only have the `self.root` value. This will represent the root Node, but for now we will initialize it as None.
 
-the constructor now looks like this: 
+The BST constructor now looks like this: 
 
 ```python
 
@@ -195,7 +195,7 @@ Finally, we need a way to print the BST. When we call `print()` on an object, it
 
 ```
 
-Notice that the `_str_helper` method takes in the `cur_node` parameter. This is to help it keep track of where it is recursing. First let' sdesign the `__str__` method. All this method needs to do is check if self.root is None. If it is we will return a string saying so. Otherwise, we will call `_str_helper` on self.root and return the result. This will end up looking like this:
+Notice that the `_str_helper` method takes in the `cur_node` parameter. This is to help it keep track of where it is recursing. First let's design the `__str__` method. All this method needs to do is check if self.root is None. If it is we will return a string saying so. Otherwise, we will call `_str_helper` on self.root and return the result. This will end up looking like this:
 
 ```python
     def __str__(self):
@@ -239,7 +239,7 @@ Now we need to build the `_str_helper` method. First, we need to check if the cu
 
 ```
 
-The recursion return line is a little confusing, so let me explain it. We want it to print the numbers in order. Thus we need to print everything to the left, the current node, and then the right. Thus, we recurse left, and assign that string to a variable. Then we get the string of the current node's value. Then we get the right branch and assign that string to a third variable. Finally, we concactinate all of those variables together, with spaces and assign that to `full_str`. We can then return `full_str`. This will successfully recurse, and return the full string.
+The recursion section is a little confusing, so let me explain it. We want it to print the numbers in order. Thus we need to print everything to the left, the current node, and then the right. Thus, we recurse left, and assign that string to a variable. Then we get the string of the current node's value. Then we get the right branch and assign that string to a third variable. Finally, we concactinate all of those variables together, with spaces and assign that to `full_str`. We can then return `full_str`. This will successfully recurse, and return the full string.
 
 We can then test this code using the following:
 
@@ -261,14 +261,21 @@ print(bst)
 
 ```
 
-I have compiled all of this into a single file. You can find that file [here](./examples/bst_example_full_solution.py)
+I have collected all of this into a single file. You can find that file [here](./examples/bst_example_full_solution.py).
 
 
 ## Practice Problem
 
-Here is your practice problem for this lesson: take the BST class we just created, and implement `.to_list()` and `.find_item()` methods. The `.to_list()` should return a list of all the items in the BST in acending order. The `.find_item()` should return the Node object that has that value. I have created a file with the current BST class as well as empty `.find_item()` and `.to_list` methods [here](./practice_problems/problems/bst_problem.py). You are welcome to check that file if you get stuck. It might also be helpful to reference the `__str__` method. 
+Here is your practice problem for this lesson: take the BST class we just created, and implement `.to_list()` and `.find_item()` methods. The `.to_list()` should return a Python list of all the items in the BST in acending order. The `.find_item()` should return the Node object that has that value. I have created a file with the current BST class as well as empty `.find_item()` and `.to_list` methods [here](./practice_problems/problems/bst_problem.py). You are welcome to check that file if you get stuck. It might also be helpful to reference the `__str__` method. You will likely need to create helper methods like we did for the `__str__` method. 
 
 
 ## Conclusion
 
 Binary search trees are incredible for storing data that you will need to search through. All though we simply used integers to store, we could put anything in a BST. For example, we could store user data by hashing usernames and using those hashes as the key in the BST. Using recursion, you can search through a tree for a user in O(log n) speed, which is incredibly fast, thus making Binary Search Tree's an incredibly powerful tool in your tool belt. 
+
+
+## Tutorial conclusion
+
+Data structures are incredibly useful tools for programming. There are many more data structures that aren't included in this tutorial, and I encourage you to look into them. You might enjoy looking at `Queues` and `Linked Lists`, both of which are handy data structures. 
+
+Thank you for reading my tutorial. I hope it helped. Have a good day!
